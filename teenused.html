@@ -1,15 +1,15 @@
-  <!-- login.html -->
+<!-- products.html -->
 <!DOCTYPE html>
 <html lang="et">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Logi sisse</title>
+    <title>Teenused</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body class="login-page">
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+<body class="service-page">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <a class="navbar-brand" href="index.html">PC-master</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -35,22 +35,29 @@
       </div>
     </nav>
 
- <!-- Navigeerimisriba -->
-    <?php include 'nav.html'; ?>
-
     <div class="container">
-        <h1>Logi sisse</h1>
-        <form>
-            <div class="form-group">
-                <label for="email">Emaili aadress</label>
-                <input type="email" class="form-control" id="email" placeholder="Sisesta email">
+        <h1>Tooted</h1>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="pildid/teenus1.jpg" class="card-img-top" alt="Toode 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Toode 1</h5>
+                        <p class="card-text">Hind: 10€</p>
+                    </div>
+                </div>
             </div>
-            <div class="form-group">
-                <label for="password">Salasõna</label>
-                <input type="password" class="form-control" id="password" placeholder="Sisesta salasõna">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="pildid/teenus2.jpg" class="card-img-top" alt="Toode 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Toode 2</h5>
+                        <p class="card-text">Hind: 20€</p>
+                    </div>
+                </div>
             </div>
-            <button type="submit" class="btn btn-primary">Logi sisse</button>
-        </form>
+            <!-- Lisa rohkem tooteid siia -->
+        </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

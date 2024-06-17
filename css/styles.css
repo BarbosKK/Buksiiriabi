@@ -1,0 +1,40 @@
+/* styles.css */
+
+body.home-page {
+    background-image: url('pildid/kontakt.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+body.blog-page {
+    background-image: url('pildid/kontakt.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+body.services-page {
+    background-image: url('../pildid/kontakt.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+body.contact-page {
+    background-image: url('../pildid/kontakt.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+body.login-page {
+    background-image: url('../pildid/kontakt.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.map-container {
+    height: 400px;
+}
