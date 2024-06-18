@@ -1,21 +1,33 @@
 /* styles.css */
 
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
 body.home-page {
-    background-image: url('pildid/kontakt.jpg');
+    /*background-image: url('../pildid/kontakt.jpg');*/
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: local;
+    height: 100vh;
+    overflow: hidden; /* Väldime kerimist */
+    padding-top: 56px; /* Lisame ruumi navigeerimisriba jaoks */
 }
 
 body.blog-page {
-    background-image: url('pildid/kontakt.jpg');
+    background-image: url('../pildid/orig.gif');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    color: rgba(155, 209, 28, 0.993);
+    padding-top: 56px; /* Lisame ruumi navigeerimisriba jaoks */
 }
 
 body.services-page {
-    background-image: url('../pildid/kontakt.jpg');
+    background-image: url('../pildid/services.jpg');
+    color: rgb(231, 15, 87);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -26,15 +38,98 @@ body.contact-page {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(19, 17, 17); /* Muudame kogu teksti värvi valgeks */
+    text-align: center; /* Joondame teksti keskele horisontaalselt */
 }
 
 body.login-page {
-    background-image: url('../pildid/kontakt.jpg');
+    background-image: url('../pildid/login.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    color: white; /* Muudame kogu teksti värvi valgeks */
+}
+
+/* Navigeerimisriba stiilid */
+.navbar {
+    width: 100%;
+    background-image: url('../pildid/sky.jpg');
+    color: rgb(209, 209, 219);
+    /*background-color: rgba(0, 0, 0, 0.5); /* Läbipaistev must taust */
+    position: fixed; /* Fikseerime navigeerimisriba */
+    top: 0; /* Asetame navigeerimisriba lehe ülaossa */
+    left: 0;
+    padding: 1em 0;
+    text-align: center;
+    z-index: 1000; /* Tagame, et navigeerimisriba oleks kõige peal */
+    font-family: 'Bagut Script', cursive; /* Rakendame Bagut Scripts fondi */
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Joondame navigeerimisribas olevad elemendid keskele */
+}
+
+.navbar li {
+    margin: 0 1em;
+}
+
+.navbar a {
+    color: rgb(255, 255, 255); /* Navigeerimisribas oleva teksti värv */
+    text-decoration: none;
+    font-family: 'Bagut Script', cursive; /* Rakendame Bagut Scripts fondi linkidele */
+}
+
+.navbar .navbar-nav .nav-link {
+    color: rgb(252, 252, 252); /* Navigeerimisribas oleva teksti värv */
+    text-decoration: none;
+    font-family: 'Bagut Script', cursive; /* Rakendame Bagut Scripts fondi linkidele */
+}
+
+.navbar .navbar-brand {
+    color: rgb(248, 248, 248); /* Navigeerimisribas oleva teksti värv */
+    font-family: 'Bagut Script', cursive; /* Rakendame Bagut Scripts fondi linkidele */
+}
+
+
+.container {
+    margin-top: 300px; /* Ruumi tekitamine navigeerimisriba alla */
+    flex: 1; /* Võtab ülejäänud ruumi kehaosas */
+    display: float;
+    flex-direction: row;
+    justify-content: center; /* Joondame vertikaalselt keskele */
+    align-items: center; /* Joondame horisontaalselt keskele */
+}
+
+h1, p {
+    margin: 0.5em 0; /* Lisame veidi vahet, et tekst oleks loetavam */
+}
+
+/* Karusselli stiilid */
+.carousel-item {
+    height: 100vh; /* Slaidide kõrgus katab kogu ekraani kõrguse */
+}
+
+.carousel-item img {
+    object-fit: cover; /* Tagab, et pildid katavad kogu karusselli ala */
+    height: 100%;
+}
+
+.carousel-inner {
+    height: 100%;
 }
 
 .map-container {
-    height: 400px;
+    width: 100%;
+    height: 500px; /* Määrame kaardile suuruse */
+    margin-top: 1em;
 }

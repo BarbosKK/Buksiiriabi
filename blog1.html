@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uued võimalused mälu salvestamiseks</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bagut+Script&display=swap">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body class="blog-page">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="index.html">PC-master</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="blog.html">Blogi</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="teenused.html">Teenused</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Kontakt</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Logi sisse</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <h1 class="mb-4">Arvuti mälu: selle tüübid ja omadused</h1>
+        <p>Arvutimälu on üks põhikomponente, ilma milleta on võimatu kasutada mitte ainult üksikuid programme, vaid ka kogu süsteemi tervikuna. Kaasaegsed arvutid kasutavad hierarhilise mälu mitut taset, et optimaalselt ühendada salvestusmaht, kiirus, maksumus ja energiatarbimine. </p>
+        
+        <h2>Kirjutuskaitstud ja korduvkirjutatav mälu</h2>
+        <p>Teabe mitmekordse ümberkirjutamise võimaluse osas jagunevad kõik mälutüübid kahte klassi:
+        <ul>  
+           <li>Read Only Memory (ROM) - teave kirjutatakse üks kord ja seda ei saa töötamise ajal muuta.</li>
+           <li>Korduvkirjutatav mittevolatiilne salvestusruum (RNS) - andmeid saab kustutada ja üle kirjutada suvaliselt mitu korda. See hõlmab enamikku kaasaegseid mälutüüpe.</li> 
+        </ul>     
+        <p>Peamine erinevus püsiva mälu vahel on see, et kasutaja ei saa seda pärast andmete kirjutamist muuta. Seda kasutatakse arvuti käivitamiseks ja käivitamiseks vajalike süsteemiandmete salvestamiseks. Näiteks BIOS või protsessori mikrokood. Ümberkirjutatav mälu on palju mitmekülgsem. See muudab kasutajafailide salvestamise, muutmise ja kustutamise lihtsaks. Näited: RAM, HDD, SSD, USB.</p>
+         
+        <h2>Virtuaalne mälu</h2>
+        <p>Virtuaalset mälu kasutatakse piiratud hulga RAM-i võimaluste laiendamiseks. Selle töö olemus on mitteaktiivsete andmete automaatne liikumine RAM-ist kõvakettale. Ja vabanenud ruum on täis aktiivseid protsesse. See võimaldab teil korraga käivitada rohkem programme, kasutades HDD-l või SSD-l vaba ruumi. Kuid juurdepääs virtuaalsesse mällu edastatud andmetele aeglustub märkimisväärselt.</p>
+        
+        <h2>Vahemälu</h2>
+        <p>RAM-i ja välismälu vahelise kiiruse vähendamiseks kasutatakse vahepealset puhvrit - vahemälu. See on väike kiire andmepuhver, millele on viimasel ajal sageli juurde pääsetud. Vahemälu on saadaval mitmel tasandil, alates L1 kuni L3. Mida lähemal on see CPU südamikule, seda kiirem on kiirus, kuid seda väiksem on võimsus. Ja vastupidi. Näiteks võib L3 maht olla kuni 25 MB, samas kui L1 ei tohi olla suurem kui 1 MB.</p>
+        
+        <h2>Staatiline ja dünaamiline mälu</h2>
+        <p>RAM on jagatud kahte tüüpi - staatiline (SRAM) ja dünaamiline (DRAM). Staatiline mälu kasutab bistabiilseid päästikuid - rakke, mis säilitavad oma oleku (0 või 1) seni, kuni rakendatakse võimsust. SRAM-ile juurdepääs on kiirem kui DRAM, kuid kulud on suuremad. Dünaamiline mälu kasutab natuke salvestamiseks rakus elektrilaengut. Lekete tõttu tuleb laeng perioodiliselt taastada, lugedes ja kirjutades lahtrit. Seetõttu on DRAM aeglasem kui SRAM, kuid suurte mahtude puhul odavam.</p>
+        
+        <h2>RAM-i maht ja taktsagedus</h2>
+        <p>RAM-i kaks põhiomadust on maht (maht) megabaitides või gigabaitides ja sagedus megahertsides. Esimene määrab, kui palju koguandmeid mahub arvuti RAM-mällu. Mida suurem on helitugevus, seda rohkem programme saab käivitada. Teine on RAM-i taktsagedus (või ribalaius), mõõdetuna megahertsides (MHz) või miljardites operatsioonides sekundis. Mida kõrgem, seda kiirem on andmevahetus RAM-i ja protsessori vahel.</p>
+        
+        <h2>Optimaalse RAM valimine</h2>
+        <p>RAM-moodulite valimisel peaksite pöörama tähelepanu mahu, sageduse ja maksumuse tasakaalule. Nende optimaalne suhe sõltub arvutis lahendatud ülesannetest.</p>
+        <ul>
+            <li>Kontoritöödeks ja veebis surfamiseks piisab 8-16 GB DDR4 sagedusel 2666 MHz.</li>
+            <li>Mänguarvutites või tööjaamades on asjakohased moodulid, mille maht on 32-64 GB sagedusel 3600 MHz.</li>
+            <li>Piiratud eelarvega on targem võtta väiksem mälumaht, kuid sageduselt kõrgem klass.</li>
+        </ul>
+
+        <h2>RAM laiendamine</h2>
+        <p>Arvuti või sülearvuti RAM-i suurendamiseks on kaks peamist viisi:</p>
+        <ol>  
+            <li>Lisab täiendava mälumooduli tühja pessa.</li>
+            <li>Standardmooduli asendamine suurema mahuga.</li>
+        </ol>    
+        <p>Esimene meetod on lihtsam ja odavam, kuid juhtub, et kõik teenindusajad on juba kaasatud. Siis jääb ainult teine võimalus.</p>
+        
+        <h2>Andmete laadimine RAM-i</h2>
+        <p>Kui arvuti on sisse lülitatud, laaditakse püsiva RAM-i andmed RAM-i järgmiselt:</p>
+        <ol>
+            <li>BIOS-i käivitamine ja riistvara kontrollimiseks enesetestide tegemine</li>
+            <li>Protsessori mikrotasandil laadimine, kiibistiku ja kontrolleri lähtestamine</li>
+            <li>Leidke alglaadimisseade (kõvaketas, USB)</li>
+            <li>Operatsioonisüsteemi käivitamine RAM-i ja kerneli käivitamine</li>
+        </ol>
+        <p>Seejärel on arvuti programmide käivitamiseks valmis järgima kasutaja juhiseid.</p>
+        
+        <h2>RAM jookseb kokku ja vead</h2>
+        <p>Ebausaldusväärne RAM-i jõudlus on üks levinumaid probleeme. Põhjustel:</p>
+        <ul>
+            <li>Kiirgusest või elektromagnetilistest häiretest tingitud vigade kogunemine</li>
+            <li>Kiipide ülekuumenemine ebapiisava jahutamise tõttu</li>
+            <li>Emaplaadi või pistiku talitlushäire</li>
+        </ul>
+        <p>Probleemi saate diagnoosida RAM-i kontrolli utiliitide (Memtest86) või toore jõu valikute abil.</p>
+        
+        <h2>RAM-i andmete varundamine</h2>
+        <p>RAM-i lendumatu olemuse tõttu kaovad kõik selles olevad andmed, kui arvuti on välja lülitatud. Selle vältimiseks kasutatakse RAM-i varundamist. RAM-i andmed sünkroonitakse kõvaketta või välkmäluseadmega kõrgel sagedusel. Voolukatkestuse korral taastatakse failide viimased salvestatud versioonid pärast taaskäivitamist. Sellist kaitset rakendatakse nii riistvaratasandil, kasutades katkematuid toiteallikaid, kui ka operatsioonisüsteemide tarkvaras.</p>
+             
+        <h2>RAM mobiilseadmetes</h2>
+        <p>Nutitelefonid ja tahvelarvutid kasutavad energiatõhusat, väikese energiatarbega LPDDR4 (Low Power Double Data Rate) RAM-i. See erineb DDR4-st väiksema energiatarbimise ja suurema integreerimise poolest SoC-sse (süsteem-on-a-chip). Mobiilseadmete RAM-i maht on tavaliselt vahemikus 2 kuni 8 GB. Sellest piisab, et enamik rakendusi saaks mugavalt töötada.</p>
+        
+        <h2>Mälu mängukonsoolides</h2>
+        <p>Mängukonsoolid nagu PlayStation, Xbox, Nintendo Switch kasutavad ka spetsiaalset 8–16 GB RAM-i ribalaiusega kuni 448 GB/s. Konkreetse riistvaraarhitektuuri optimeerimise tõttu piisab sellest, et mugavalt käivitada kaasaegseid nõudlikke mänge kõrge eraldusvõimega ja sujuva kaadrisagedusega.</p>
+             
+        <h2>Arvutimälu arengu suundumused</h2>
+        <p>Uut tüüpi RAM-i ja välise andmesalvestuse arendamise peamised suundumused on järgmised:</p> 
+        <ul>
+            <li>Suurendage kiibi mälu tihedust</li>
+            <li>Kiibi võimsuse kasv, säilitades samal ajal mõõtmed</li> 
+            <li>Suurendage taktsagedust ja ribalaiust</li> 
+            <li>Väiksem energiatarbimine ja soojuse hajutamine</li>
+        </ul>
+        <p>Need uuendused võimaldavad luua arvuteid, nutitelefone ja andmekeskusi, millel on veelgi suurem kiirus ja funktsionaalsus kui täna.</p>
+
+        <h2>Uued RAM-tehnoloogiad</h2>
+        <p>Lisaks traditsioonilistele DRAM-i ja RAM-i SRAM-tüüpidele töötatakse välja uusi paljutõotavamaid tehnoloogiaid:</p>
+        <ul>
+            <li>MRAM (Magnetoresistive RAM) - kondensaatorite asemel magnetilistel üleminekutel olevad rakud</li>
+            <li>FeRAM (Ferroelectric RAM) - kasutab ferroelektrilisi materjale</li>
+            <li>(Phase-change RAM) - kalkogeenklaasist üleminekutel põhinevad rakud</li>
+            <li>NRAM (Nano-RAM) - süsiniknanotorud ja memristorid</li> 
+        </ul>
+        <p>Need tehnoloogiad lubavad suurimat paigutustihedust, kiirust, energiatõhusust ja usaldusväärsust. Siiski on nad veel arendamise ja testimise etapis.</p>
+        
+        <h2>3D RAM-i struktuurid</h2>
+        <p>Võimsuse suurendamise praegune suund on mitmetasandilised 3D-RAM-struktuurid, millel on otsast lõpuni räni viaalid. See võimaldab teil paigutada kuni 8 lamedat RAM-kiipide kihti üksteise peale sirgete ühendustega. Selle tulemusena suureneb moodulite võimsus mitu korda, säilitades samal ajal ala.</p>
+         
+        <h2>Kvantmälu</h2>
+        <p>Teine paljutõotav valdkond on kvantmälu arendamine, mis põhineb qubitidel (kvantbittidel). Sellise mälu potentsiaal on peaaegu piiramatu maht ja juurdepääsukiirus tänu põhimõtteliselt erinevatele kvantmehaanilistele andmetele teabe salvestamisel.</p>
+         
+        <h2>Bioloogiline mälu</h2>
+        <p>Samuti on bakteritel ja DNA-l põhineva bioloogilise mälu eksootilised eksperimentaalsed arengud. Kuid siiani pole nad kaugeltki praktilisest rakendusest IT-s. Sellegipoolest on biotehnoloogia ja arvutiteaduse ristumiskohas potentsiaali luua täiesti uusi arvutisüsteeme, millel on enneolematud andmetöötluse kiiruse ja mahu omadused.</p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Logi sisse</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body class="login-page">
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -16,9 +16,9 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="index.html">Kodu <span class="sr-only">(current)</span></a>
-          </li>
+          <!--<li class="nav-item active">
+            <a class="nav-link" href="index.html">Meist <span class="sr-only">(current)</span></a>
+          </li>-->
           <li class="nav-item">
             <a class="nav-link" href="blog.html">Blogi</a>
           </li>
@@ -35,9 +35,6 @@
       </div>
     </nav>
 
- <!-- Navigeerimisriba -->
-    <?php include 'nav.html'; ?>
-
     <div class="container">
         <h1>Logi sisse</h1>
         <form>
@@ -50,6 +47,7 @@
                 <input type="password" class="form-control" id="password" placeholder="Sisesta salasõna">
             </div>
             <button type="submit" class="btn btn-primary">Logi sisse</button>
+            <p><button class="nav-link"><a href="create-account.component.html">Uus kasutaja</a></button></p>
         </form>
     </div>
 

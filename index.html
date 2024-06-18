@@ -1,14 +1,36 @@
- <!-- index.html -->
- <!DOCTYPE html>
- <html lang="et">
- <head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>PC-master</title>
-     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-     <link rel="stylesheet" type="text/css" href="css/styles.css">
- </head>
- <body class="home-page">  
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC-master</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bagut+Script&display=swap">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <style>
+        /* Karusselli stiilid */
+        .carousel-item {
+            height: 100vh; /* Slaidide kõrgus katab kogu ekraani kõrguse */
+        }
+
+        .carousel-item img {
+            object-fit: cover; /* Tagab, et pildid katavad kogu karusselli ala */
+            height: 100%;
+        }
+
+        .carousel-inner {
+            height: 100%;
+        }
+
+        .map-container {
+            width: 100%;
+            height: 500px; /* Määrame kaardile suuruse */
+            margin-top: 1em;
+        }
+    </style>
+</head>
+<body class="home-page">  
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <a class="navbar-brand" href="index.html">PC-master</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -16,9 +38,9 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="index.html">Kodu <span class="sr-only">(current)</span></a>
-          </li>
+          <!--<li class="nav-item active">
+            <a class="nav-link" href="index.html">Meist <span class="sr-only">(current)</span></a>
+          </li>-->
           <li class="nav-item">
             <a class="nav-link" href="blog.html">Blogi</a>
           </li>
@@ -45,6 +67,10 @@
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img class="d-block w-100" src="pildid/ind1.jpg" alt="First slide">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>PC-master</h5>
+            <p>PC-master ettevõte asutati aastal 2020. Põhitegevus kõik mis on seotud arvutitega ja tarkvaraga arendamisega.</p>
+          </div>
         </div>
         <div class="carousel-item">
           <img class="d-block w-100" src="pildid/ind2.jpg" alt="Second slide">

@@ -2,11 +2,13 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-create-account',
-  standalone: true,
-  imports: [],
   templateUrl: './create-account.component.html',
-  styleUrl: './create-account.component.css'
+  styleUrls: ['./create-account.component.css'] // Kasutades .css laiendit
 })
 export class CreateAccountComponent {
+  constructor() { }
 
+  createAccount() {
+    // Konto loomise loogika
+  }
 }
